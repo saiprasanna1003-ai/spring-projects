@@ -1,0 +1,23 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dev" class="springwoboot.DemoSpringFrame.Dev" autowire="byType">
+		
+		<!-- <property name="computer" ref="computer" /> -->
+		<!-- <property name="laptop" ref="lap" /> -->
+		<!-- <property name="age" value="20" />--><!-- Setter Injection-->
+		<!-- <constructor-arg value="12" /> -->
+		<!-- <constructor-arg ref="lap" /> --> <!-- Constructor Injection--> 
+	</bean>
+	
+	<bean id="computer" class="springwoboot.DemoSpringFrame.Laptop" >
+		
+	</bean>
+	
+	<bean id="desk" class="springwoboot.DemoSpringFrame.Desktop" primary="true">
+		
+	</bean>
+</beans>
